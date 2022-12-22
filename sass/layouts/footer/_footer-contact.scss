@@ -1,0 +1,38 @@
+.footer__item{ 
+  transition: color var(--sec) var(--cubic);
+  &:not(:last-child){
+    margin-bottom: 12px;
+    /* outline: 2px red solid; */
+  }
+  &:last-child{
+    margin-bottom: 60px;
+  } 
+  &:hover, &:focus{   
+      color: var(--color-accent); 
+     
+  }
+}
+
+
+  .footer__adress{
+  font-style: normal; 
+  line-height: 1.71;
+  color: var(--color-secondary-accent);  
+  transition: color var(--sec) var(--cubic);
+  &:hover{
+    
+    color: var(--color-accent); 
+    
+    }
+  }
+  .footer__contact{
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--sec) var(--cubic);
+  &:hover{
+    
+    color: var(--color-accent); 
+ 
+    }
+  }
+  

@@ -1,0 +1,27 @@
+.social-list{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-icon{
+   height: 44px;
+   width: 44px;
+   /* outline: 2px red solid; */
+   margin-right: 10px;
+   /* border-radius: 50%; */
+  }
+  .social-icon:last-child{
+    margin-right: 0; 
+    
+  }
+  .social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    fill: #FFFFFF; 
+    transition:  background-color var(--sec)  var(--cubic);
+  }
