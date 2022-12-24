@@ -66,22 +66,40 @@
     /* transform: translatey(-50%);
     transform: translatex(-50%); */
     transform: translate(-50%, -50%) rotate(-360deg) scale(1);
-    min-width: 528px;
-    min-height: 581px;
+  
+    min-width: 450px;
+    min-height: 609px;
     background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: opacity var(--sec) var(--cubic), transform var(--sec) var(--cubic);
-  
+    @media screen and (min-width:1200px){
+      
+    min-width: 528px;
+    min-height: 581px;
+    }
  & p{
-    font-weight: 700;
+  font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
+  /* or 150% */
+  
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   
-  color: var(--color-primary)
+  color: var(--color-primary);
+  
+  @media screen and (min-width:1200px){
+      
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+    }
+   
   }
 
 
@@ -179,13 +197,27 @@
     align-items: center;
     position: relative;
   
-  font-size: 14px;
-  line-height: 1.71;
+ 
   /* identical to box height, or 171% */
   
   letter-spacing: 0.03em;
   
   color: #757575;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width:1200px){
+     font-size: 14px;
+  line-height: 1.71;
+  }
+
+
+
   }
   
   
