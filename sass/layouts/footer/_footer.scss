@@ -14,8 +14,9 @@
   }
     @media screen and (min-width:1200px){
     max-width: 1600px;   
+     display: flex;
   }
-    /* display: flex; */
+    
           background-color:var(--background-secondary);
            /* padding-bottom: 60px; 
          padding-top: 60px; */
@@ -23,7 +24,7 @@
       
   }
 .footer__boxlogo{
-  outline: 1px solid red;
+  // outline: 1px solid red;
   // width: calc((100% - 32px) / 2);
    @media screen and (max-width:767px){
   margin: 0 auto;
@@ -57,23 +58,10 @@
     // flex-basis: caic (100% / 2);
     // // width: 768px;
   }
+  @media screen and (min-width:1200px) {
+    display: flex;
 }
-// .kl{
-//   display:block;
-//   width:200px;
-//   height:200px;
-//   background-color: aqua;
-// }
-// .kl1{
-//   display:block;
-//   width:200px;
-//   height:200px;
-//   background-color: rgb(255, 0, 13);
-// }
-// .totkl{
-//   display:flex;
-// }
-  
+}
   
   
   

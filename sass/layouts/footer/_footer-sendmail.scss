@@ -1,11 +1,13 @@
 .emailsend{
-  @media screen and (min-width:768px){
-    width:100%;
+  @media screen and (min-width:768px) and (max-width:1200px){
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media screen and (min-width:1200px){
       /* display: flex; */
     width: 570px;
-   margin-top: 72px;
+   margin-top: 12px;
    margin-left: 93px;
   
   
@@ -16,8 +18,12 @@
     font-weight: 700;
     margin-top: 0;
     text-align: center;
+
+
+    
     @media screen and (min-width:1200px){
     text-align:start;
+  
     }
   line-height: calc(16 / 14);
   
@@ -28,8 +34,11 @@
   
   }
   .emailsend__form{
-    display: flex;
-    width:100%;
+    @media screen and (min-width:1200px) {
+      display: flex;
+    }
+    
+    // width:100%;
    justify-items: center;
    justify-content: center;
    align-items: center;
@@ -42,26 +51,29 @@
 
   }
  .emailsend__input{ 
-  height: 50px;
-  width:100%;
-  @media screen and (mіn-width:480px){
-   margin-bottom: 20px;
-    width: 450px; 
-  }
-    
-  @media screen and (mіn-width:1200px){
-     margin-right: 12px;
-    width: 358px; 
-  }
-   
-    border: 1px solid rgba(255, 255, 255, 0.3);
+     border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: transparent;
   padding-left: 16px;
-  margin-bottom: 20px;
 
+  margin-bottom: 20px;
+  height: 50px;
+ width:100%;
+ @media screen and (min-width:480px) {
+  margin-right: 12px;
+  margin-bottom: 20px;
+  width: 450px;
   
+}
+@media screen and (min-width:1200px) {
+  margin-right: 12px;
+
+   width: 358px; 
+   margin-bottom: 0;
+}
+
+   
   }
   .emailsend__btn{
     margin: 0;
@@ -81,6 +93,8 @@
   
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   letter-spacing: 0.06em;
   &:hover .emailsend__icon,  &:hover {
