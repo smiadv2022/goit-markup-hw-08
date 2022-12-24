@@ -1,8 +1,27 @@
 .footerlink {
+  display: block;
+ outline: 1px solid green;
+//  width: calc((100% - 32px) / 2);
+
+  @media screen and (max-width:768px){
+    margin-bottom: 60px;
+    margin-bottom: 60px;
+    // margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+ @media screen and (mіn-width:768px) and (max-width:1200px){
+margin-left: auto;
+margin-right: 74px;
+ }
+  @media screen and (min-width:1200px){
     margin-bottom: 99px;
-    /* padding-right: 100px; */
     margin-top: 72px;
     margin-left: 70px;
+  }
+
+    /* padding-right: 100px; */
+
     /* outline: 2px red solid; */
     & p{
       font-weight: 700;
@@ -12,10 +31,11 @@
     text-transform: uppercase;
     color: var(--color-secondary-accent);
     margin-bottom: 20px;
-    
+    @media screen and (max-width:480px){
+    text-align: center;
     }
   }
-
+}
   .footerlink__list{
     display:flex;
     justify-content: center;

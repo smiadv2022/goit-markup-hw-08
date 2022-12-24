@@ -1,16 +1,24 @@
 .emailsend{
-    /* display: flex; */
+  @media screen and (min-width:768px){
+    width:100%;
+  }
+  @media screen and (min-width:1200px){
+      /* display: flex; */
     width: 570px;
    margin-top: 72px;
    margin-left: 93px;
   
   
   }
+  
+  }
     .emailsend__title{
     font-weight: 700;
     margin-top: 0;
+    text-align: center;
+    @media screen and (min-width:1200px){
     text-align:start;
-  
+    }
   line-height: calc(16 / 14);
   
   text-transform: uppercase;
@@ -21,19 +29,38 @@
   }
   .emailsend__form{
     display: flex;
+    width:100%;
    justify-items: center;
+   justify-content: center;
    align-items: center;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+   @media screen and (max-width:1200px){
+    flex-wrap: wrap;
+   }
+
   }
- .emailsend__input{
-    height: 50px;
-    width: 358px;
+ .emailsend__input{ 
+  height: 50px;
+  width:100%;
+  @media screen and (mіn-width:480px){
+   margin-bottom: 20px;
+    width: 450px; 
+  }
+    
+  @media screen and (mіn-width:1200px){
+     margin-right: 12px;
+    width: 358px; 
+  }
+   
     border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: transparent;
   padding-left: 16px;
-  
-  margin-right: 12px;
+  margin-bottom: 20px;
+
   
   }
   .emailsend__btn{
