@@ -1507,31 +1507,74 @@ p, h1, h2, h3, ul, li {
 
 .filter {
   display: flex;
-  width: 100%;
-  width: 596px;
-  height: 54px;
+  flex-wrap: wrap;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 34px;
   padding: 0;
 }
+@media screen and (min-width: 768px) {
+  .filter {
+    height: 54px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    height: 54px;
+  }
+}
 
 .filter__item {
-  margin-right: 8px;
+  margin-right: 6px;
   display: flex;
   font-weight: 500;
   align-items: center;
 }
-.filter__item:last-child {
-  margin-right: 0;
+@media screen and (max-width: 767px) {
+  .filter__item {
+    margin-bottom: 15px;
+  }
+  .filter__item:nth-child(3) {
+    margin-right: 0;
+  }
+  .filter__item:last-child {
+    margin-right: 0;
+  }
+  .filter__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter__item {
+    margin-bottom: 0;
+    margin-right: 6px;
+  }
+  .filter__item:nth-last-child {
+    margin-right: 0;
+  }
 }
 
 .filter__list {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  justify-content: center;
   padding: 0;
+}
+@media screen and (max-width: 767px) {
+  .filter__list {
+    width: 326px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter__list {
+    height: 54px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter__list {
+    height: 54px;
+  }
 }
 
 .filter__btn {
