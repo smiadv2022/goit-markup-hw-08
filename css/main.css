@@ -79,7 +79,7 @@ p, h1, h2, h3, ul, li {
     font-size: 26px;
     line-height: 1.19;
     color: #000000;
-    margin-right: auto;
+    margin-right: 87px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -330,7 +330,7 @@ p, h1, h2, h3, ul, li {
 }
 @media screen and (min-width: 768px) {
   .navigate__item {
-    margin-right: 56px;
+    margin-right: 50px;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -344,13 +344,30 @@ p, h1, h2, h3, ul, li {
 }
 
 .navigate__link {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--color-primary);
   transition: color var(--sec) var(--cubic);
 }
+@media screen and (min-width: 768px) {
+  .navigate__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigate__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
+}
 .navigate__link:focus, .navigate__link:hover {
+  color: var(--color-accent);
+}
+
+.navigatemob__link--active {
   color: var(--color-accent);
 }
 
@@ -372,9 +389,9 @@ p, h1, h2, h3, ul, li {
 
 .contactlist {
   display: none;
-  margin-left: auto;
   align-items: center;
   align-content: center;
+  margin-left: auto;
 }
 @media screen and (min-width: 480px) {
   .contactlist {
@@ -419,6 +436,15 @@ p, h1, h2, h3, ul, li {
   fill: var(--color-secondary);
   color: var(--color-secondary);
   transition: color var(--sec) var(--cubic), fill var(--sec) var(--cubic);
+}
+@media screen and (min-width: 768px) {
+  .contactlist__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+  }
 }
 .contactlist__link:focus, .contactlist__link:hover {
   color: var(--color-accent);
@@ -698,12 +724,12 @@ p, h1, h2, h3, ul, li {
 }
 @media screen and (min-width: 768px) {
   .team {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team {
-    width: 1200px;
+    max-width: 1600px;
     padding-bottom: 94px;
     padding-top: 94px;
   }
@@ -729,9 +755,24 @@ p, h1, h2, h3, ul, li {
   }
 }
 
+.team__center {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .team__center {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__center {
+    width: 1200px;
+  }
+}
+
 .team__list {
   display: block;
-  width: 100%;
+  max-width: 1200px;
   text-align: center;
   justify-content: center;
 }
@@ -1228,8 +1269,9 @@ p, h1, h2, h3, ul, li {
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    max-width: 1600px;
+    width: 1600px;
     display: flex;
+    justify-content: center;
   }
 }
 
@@ -1253,6 +1295,12 @@ p, h1, h2, h3, ul, li {
   margin-bottom: 20px;
   color: var(--color-secondary-accent);
   padding: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__center {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -1322,7 +1370,7 @@ p, h1, h2, h3, ul, li {
 .backdrop__modal {
   cursor: pointer;
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   padding-top: 40px;
   padding-left: 40px;
@@ -1420,6 +1468,17 @@ p, h1, h2, h3, ul, li {
   resize: none;
   margin-bottom: 20px;
   outline: none;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .backdrop__modal textarea {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+  }
 }
 .backdrop__modal textarea:hover {
   border: 1px solid var(--color-accent);
@@ -1436,7 +1495,6 @@ p, h1, h2, h3, ul, li {
   align-items: center;
   position: relative;
   /* identical to box height, or 171% */
-  letter-spacing: 0.03em;
   color: #757575;
   font-weight: 400;
   font-size: 12px;
@@ -1447,7 +1505,8 @@ p, h1, h2, h3, ul, li {
 @media screen and (min-width: 1200px) {
   .backdrop__agree {
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 16px;
+    letter-spacing: 0.01em;
   }
 }
 
@@ -1492,6 +1551,18 @@ p, h1, h2, h3, ul, li {
   justify-items: center;
   align-items: center;
   /* outline: 1px solid blueviolet; */
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .backdrop__labelagree {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .backdrop__checksvg {
@@ -1511,14 +1582,23 @@ p, h1, h2, h3, ul, li {
 
 .backdrop__textagree {
   display: inline-block;
-  font-size: 14px;
-  line-height: 1.71;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
   /* identical to box height, or 171% */
   margin-left: 4px;
-  letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2196F3;
+}
+@media screen and (min-width: 1200px) {
+  .backdrop__textagree {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .portfolio {

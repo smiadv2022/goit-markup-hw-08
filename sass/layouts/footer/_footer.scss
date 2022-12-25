@@ -13,8 +13,9 @@
     width: 768px;
   }
     @media screen and (min-width:1200px){
-    max-width: 1600px;   
+    width: 1600px;   
      display: flex;
+    justify-content: center;
   }
     
           background-color:var(--background-secondary);
@@ -47,6 +48,12 @@
     margin-bottom: 20px;
     color: var(--color-secondary-accent);
     padding: 0;  
+}
+
+.footer__center{
+  @media screen and (min-width:1200px){
+    display: flex;
+}
 }
 .footer-line{ 
 

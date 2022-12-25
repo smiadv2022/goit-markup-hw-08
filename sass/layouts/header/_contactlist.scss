@@ -5,14 +5,16 @@
    }
    @media screen and (min-width:768px) {
     display:block;
+
    } 
    @media screen and (min-width:1200px) {
  display:flex;
    }
    
-   margin-left: auto;
+  //  margin-left: auto;
    align-items: center;
    align-content: center;
+   margin-left: auto;
   
   
   }
@@ -32,6 +34,18 @@
       }
     }
   .contactlist__link {
+
+    @media screen and (min-width:768px) {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    
+    letter-spacing: 0.02em;
+  }
+
+
+
     display: flex;
    font-weight: 500;
   line-height: 1.14;
