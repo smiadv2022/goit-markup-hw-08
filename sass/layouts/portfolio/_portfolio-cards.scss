@@ -6,19 +6,26 @@
     padding-bottom: 60px;
 
     justify-content: center;
-    @media screen and(min-width:768px){
+    @media screen and (min-width:768px){
       justify-content: flex-start;
      }
-    @media screen and(min-width:1200px){
+    @media screen and (min-width:1200px){
      padding-bottom: 94px; 
     }
     
   }
   .cards__list{
-    display:block;
-    width:100%;
-    margin-left: auto;
-    margin-right: auto;
+    display:flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+
+    justify-content: center;
+    @media screen and (min-width:768px){
+      justify-content: flex-start;
+     }
+    @media screen and (min-width:1200px){
+     padding-bottom: 0; 
+    }
   }
   .cards__item {
    
@@ -30,7 +37,7 @@
   border-bottom: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
   // outline: 1px solid red;
-  @media screen and(max-width:767px){
+  @media screen and (max-width:767px){
  
   
      &:last-child{
@@ -58,6 +65,7 @@
 
    @media screen and (min-width:1200px) {
     flex-basis: calc( ( 100% - 120px   ) / 3 ) ;
+    flex-basis: calc( ( 100% - 100px   ) / 3 ) ;
     margin-right: 30px;
     margin-bottom: 30px;
     &:nth-child(3n){
