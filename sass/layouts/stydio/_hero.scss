@@ -10,13 +10,23 @@
   max-width: 480px;
   background-image:linear-gradient(
    
-  rgba(47, 48, 58, 0.4), #2F303A66 ), url(../images/hero480.jpg);
+  rgba(47, 48, 58, 0.4), #2F303A66 ), url('../images/hero480.jpg');
+  
+  @include retina{
+    background-image:linear-gradient(
+   
+    rgba(47, 48, 58, 0.4), #2F303A66 ), url('../images/hero480-2x (1).jpg');
+  }
 @media screen and (min-width:480px){
   max-width: 480px;
   background-image:linear-gradient(
    
-      rgba(47, 48, 58, 0.4), #2F303A66 ), url(../images/hero480.jpg);
-  
+      rgba(47, 48, 58, 0.4), #2F303A66 ), url('../images/hero480.jpg');
+      @include retina{
+        background-image:linear-gradient(
+       
+        rgba(47, 48, 58, 0.4), #2F303A66 ), url('../images/hero480-2x (1).jpg');
+      }
  
 }
 @media screen and (min-width:768px){
@@ -24,18 +34,27 @@
   height: 400px;
   background-image:linear-gradient(
    
-      rgba(47, 48, 58, 0.4), #2F303A66 ), url(../images/hero768.jpg);
+      rgba(47, 48, 58, 0.4), #2F303A66 ), url('../images/hero768.jpg');
   
- 
+      @include retina{
+        background-image:linear-gradient(
+       
+        rgba(47, 48, 58, 0.4), #2F303A66 ), url('../images/hero768-2x (1).jpg');
+      }
 }
 @media screen and (min-width:1200px){
   max-width: 1600px;
   
  background-image:linear-gradient(
    
-      rgba(47, 48, 58, 0.4), #2F303A66 ), url(../images/HeroIPG\(1\).jpg);
+      rgba(47, 48, 58, 0.4), #2F303A66 ), url('../images/HeroIPG\(1\).jpg');
      height: 600px;
      max-height: 600px;
+     @include retina{
+      background-image:linear-gradient(
+     
+      rgba(47, 48, 58, 0.4), #2F303A66 ), url('../images/hero1200-2x (1).jpg');
+    }
 }
     font-weight: 900;
   font-size: 44px;
