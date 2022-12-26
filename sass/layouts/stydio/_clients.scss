@@ -9,7 +9,7 @@
     @media screen and (min-width:480px) and (max-width:767px){
       width: 480px;
     }
-     @media screen and (min-width:768px) and (max-width:1200px){
+     @media screen and (min-width:768px) and (max-width:1199px){
     width: 768px;
   }
   @media screen and (min-width:1200px){
@@ -72,7 +72,7 @@
       margin-bottom: 0;
     }
    }
-   @media screen and (min-width:768px) and (max-width:1200px) {
+   @media screen and (min-width:768px) and (max-width:1199px) {
     flex-basis: calc((100% - 32px*3) / 3);
     height: 92px;
     min-width: 170px;
