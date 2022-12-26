@@ -449,8 +449,26 @@ p, h1, h2, h3, ul, li {
   fill: #2196F3;
 }
 
-.contactlist__icon {
+.contactlist__iconemail {
   margin-right: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contactlist__iconemail {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+  }
+}
+
+.contactlist__icontel {
+  margin-right: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contactlist__icontel {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+  }
 }
 
 .hero {

@@ -66,12 +66,23 @@
 
 }
 
-
+.contactlist__iconemail{
+  margin-right: 10px;
+  @media screen and (min-width:768px) and (max-width:1199px){
+    width:14px; 
+    height:10px;
+    margin-right: 8px;
+  }
+}
  
-.contactlist__icon{
+.contactlist__icontel{
  
    margin-right: 10px;
-  
+   @media screen and (min-width:768px) and (max-width:1199px){
+    width:10px; 
+    height:14px;
+    margin-right: 8px;
+  }
 
   } 
   
