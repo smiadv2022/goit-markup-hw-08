@@ -9,7 +9,7 @@
         width: 768px;
        }
   @media screen and (min-width:1200px){
-    width:1600px;
+    max-width:1600px;
      padding-bottom: 94px; 
        padding-top: 94px;
   }
@@ -88,7 +88,7 @@ border-radius: 0px 0px 4px 4px;
   border-radius: 0px 0px 4px 4px;
 
    @media screen and (min-width:768px) and (max-width:1199px){
-    width: calc((100% - 2 * 32px) / 2);
+    width: calc((100% - 30px) / 2);
     margin-right: 30px;
     &:nth-child(2){
       margin-right: 0;
@@ -101,7 +101,7 @@ border-radius: 0px 0px 4px 4px;
  }
   }
   @media screen and  (min-width:1200px){  
-    width: calc((100% - 4 * 30px) / 4);
+    width: calc((100% - 3 * 30px) / 4);
     margin-bottom: 0;
      margin-right: 30px;
      
