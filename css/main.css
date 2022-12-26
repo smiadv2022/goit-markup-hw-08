@@ -786,7 +786,6 @@ p, h1, h2, h3, ul, li {
 
 .team__list {
   display: block;
-  width: 1200px;
   text-align: center;
   justify-content: center;
 }
@@ -821,7 +820,7 @@ p, h1, h2, h3, ul, li {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
-    flex-basis: calc((100% - 60px) / 2);
+    width: calc((100% - 64px) / 2);
     margin-right: 30px;
   }
   .team__item:nth-child(2) {
@@ -1775,8 +1774,7 @@ p, h1, h2, h3, ul, li {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .cards__item {
-    flex-basis: calc((100% - 65px) / 2);
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 66px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
   }
@@ -1789,8 +1787,7 @@ p, h1, h2, h3, ul, li {
 }
 @media screen and (min-width: 1200px) {
   .cards__item {
-    flex-basis: calc((100% - 120px) / 3);
-    flex-basis: calc((100% - 100px) / 3);
+    width: calc((100% - 100px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
   }

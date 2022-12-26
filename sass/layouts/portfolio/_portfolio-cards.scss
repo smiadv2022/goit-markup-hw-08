@@ -46,8 +46,8 @@
   }
 
   @media screen and (min-width:768px) and (max-width:1199px) {
-    flex-basis: calc( ( 100% - 65px   ) / 2 ) ;
-    width: calc( ( 100% - 60px   ) / 2 ) ;
+   
+    width: calc( ( 100% - 66px   ) / 2 ) ;
     margin-right: 30px;
     margin-bottom: 30px;
     &:nth-child(2n){
@@ -64,8 +64,8 @@
   }
 
    @media screen and (min-width:1200px) {
-    flex-basis: calc( ( 100% - 120px   ) / 3 ) ;
-    flex-basis: calc( ( 100% - 100px   ) / 3 ) ;
+
+    width: calc( ( 100% - 100px   ) / 3 ) ;
     margin-right: 30px;
     margin-bottom: 30px;
     &:nth-child(3n){
