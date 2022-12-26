@@ -72,14 +72,12 @@ p, h1, h2, h3, ul, li {
 }
 @media screen and (min-width: 768px) {
   .logo {
-    margin-right: 88px;
     padding-top: 26px;
     padding-bottom: 26px;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     color: #000000;
-    margin-right: 87px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -755,10 +753,6 @@ p, h1, h2, h3, ul, li {
   }
 }
 
-.team__center {
-  margin-left: auto;
-  margin-right: auto;
-}
 @media screen and (min-width: 768px) {
   .team__center {
     width: 768px;
@@ -766,6 +760,8 @@ p, h1, h2, h3, ul, li {
 }
 @media screen and (min-width: 1200px) {
   .team__center {
+    margin-left: auto;
+    margin-right: auto;
     width: 1200px;
   }
 }
@@ -1275,13 +1271,13 @@ p, h1, h2, h3, ul, li {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer__boxlogo {
-    margin: 0 auto;
+    margin: 0 0;
     text-align: center;
   }
 }
-@media screen and (mіn-width: 768px) and (max-width: 1200px) {
+@media screen and (mіn-width: 769px) and (max-width: 1200px) {
   .footer__boxlogo {
     display: block;
     padding: 0;

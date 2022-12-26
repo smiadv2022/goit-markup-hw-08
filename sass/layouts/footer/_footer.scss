@@ -27,12 +27,12 @@
 .footer__boxlogo{
   // outline: 1px solid red;
   // width: calc((100% - 32px) / 2);
-   @media screen and (max-width:767px){
-  margin: 0 auto;
+   @media screen and (max-width:1199px){
+  margin: 0 0;
   text-align: center;
   
 }
-  @media screen and (mіn-width:768px) and (max-width:1200px) {
+  @media screen and (mіn-width:769px) and (max-width:1200px) {
  display: block;
     padding: 0;
     margin-left: 60px;
