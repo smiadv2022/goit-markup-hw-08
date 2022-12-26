@@ -1679,8 +1679,6 @@ p, h1, h2, h3, ul, li {
 
 .filter__list {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0;
 }
 @media screen and (max-width: 767px) {
@@ -1692,11 +1690,15 @@ p, h1, h2, h3, ul, li {
 @media screen and (min-width: 768px) {
   .filter__list {
     height: 54px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .filter__list {
     height: 54px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1774,7 +1776,7 @@ p, h1, h2, h3, ul, li {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .cards__item {
-    width: calc((100% - 66px) / 2);
+    width: calc((100% - 30px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
   }
@@ -1787,9 +1789,9 @@ p, h1, h2, h3, ul, li {
 }
 @media screen and (min-width: 1200px) {
   .cards__item {
-    width: calc((100% - 100px) / 3);
+    width: calc((100% - 60px) / 3);
     margin-right: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 52px;
   }
   .cards__item:nth-child(3n) {
     margin-right: 0;
@@ -1843,6 +1845,11 @@ p, h1, h2, h3, ul, li {
   margin-bottom: 20px;
   margin-left: 24px;
   color: var(--color-secondary);
+}
+@media screen and (min-width: 1200px) {
+  .cards__index {
+    margin-bottom: 0px;
+  }
 }
 
 .cards__title {

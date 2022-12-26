@@ -52,23 +52,28 @@ flex-wrap: wrap;
 .filter__list{
 display:flex;
 // flex-wrap: wrap;
-margin-left: auto;
-margin-right: auto;
+// margin-left: auto;
+// margin-right: auto;
 // justify-content: center;
 padding: 0;
 @media screen and (max-width:767px){
 width: 326px;
 flex-wrap: wrap;
+
 }
 // height: 91px;
 @media screen and (min-width:768px){
   // width: 575px;
   height: 54px;
+  margin-left: auto;
+margin-right: auto;
 }
 
 @media screen and (min-width:1200px){
 // width: 575px;
 height: 54px;
+margin-left: auto;
+margin-right: auto;
 }
 }
 .filter__btn{
