@@ -674,7 +674,6 @@ p, h1, h2, h3, ul, li {
 
 .feature__item {
   margin-bottom: 30px;
-  margin-right: 30px;
 }
 @media screen and (min-width: 480px) {
   .feature__item {
@@ -699,6 +698,7 @@ p, h1, h2, h3, ul, li {
   .feature__item {
     width: 1200px;
     margin-right: 30px;
+    margin-bottom: 0;
     flex-basis: calc((100% - 120px) / 4);
   }
   .feature__item:last-child {
@@ -1320,6 +1320,11 @@ p, h1, h2, h3, ul, li {
   margin-bottom: 20px;
   color: var(--color-secondary-accent);
   padding: 0;
+}
+@media screen and (max-width: 1199px) {
+  .footer__logo {
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {

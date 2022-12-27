@@ -48,6 +48,9 @@
     margin-bottom: 20px;
     color: var(--color-secondary-accent);
     padding: 0;  
+    @media screen and (max-width:1199px){
+margin-right:auto;
+    }
 }
 
 .footer__center{
