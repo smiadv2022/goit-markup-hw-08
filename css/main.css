@@ -675,6 +675,9 @@ p, h1, h2, h3, ul, li {
 .feature__item {
   margin-bottom: 30px;
 }
+.feature__item:last-child {
+  margin-bottom: 0;
+}
 @media screen and (min-width: 480px) {
   .feature__item {
     width: 100%;
