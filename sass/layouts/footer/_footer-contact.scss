@@ -3,6 +3,11 @@
   transition: color var(--sec) var(--cubic);
   &:not(:last-child){
     margin-bottom: 9px;
+   @media screen  and (max-width:1199px){
+    margin-bottom: 8px;
+   }
+  &:not(:last-child){
+    margin-bottom: 9px;
    @media screen and (min-width:768px) and (max-width:1199px){
     margin-bottom: 8px;
    }
