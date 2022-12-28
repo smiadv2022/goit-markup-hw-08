@@ -34,11 +34,17 @@
 
   .footer__adress{
     display: inline-block;
-    margin-bottom: 8px;
-  font-style: normal; 
-  font-weight: 400;
-font-size: 14px;
-  line-height: 1.71;
+    // margin-bottom: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    
+    // text-align: center;
+    letter-spacing: 0.03em;
+    width:232px;
   text-align: center;
   color: var(--color-secondary-accent);  
   transition: color var(--sec) var(--cubic);
@@ -49,14 +55,23 @@ font-size: 14px;
     }
 
     @media screen and (min-width:1200px){
-      margin-bottom: 9px;
+      // margin-bottom: 9px;
       text-align: left;
       width:231px;
     }
   }
   .footer__contact{
     // display: inline-block;
-  line-height: 1.71;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+text-align: center;
+letter-spacing: 0.03em;
+  
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--sec) var(--cubic);
   &:hover{
@@ -70,5 +85,8 @@ font-size: 14px;
       margin-bottom: 9px;
      }
 
+  }
+  @media screen and  (min-width:1200px){
+    text-align: left;
   }
 }
