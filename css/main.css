@@ -1231,18 +1231,26 @@ p, h1, h2, h3, ul, li {
   transition: color var(--sec) var(--cubic);
 }
 .footer__item:not(:last-child) {
-  margin-bottom: 8px;
-  /* outline: 2px red solid; */
+  margin-bottom: 9px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .footer__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
 }
-.footer__item:last-child {
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+  /* outline: 2px red solid; */
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+.footer__item:not(:last-child):last-child {
   margin-bottom: 60px;
 }
-.footer__item:hover, .footer__item:focus {
+.footer__item:not(:last-child):hover, .footer__item:not(:last-child):focus {
   color: var(--color-accent);
 }
 
@@ -1256,7 +1264,10 @@ p, h1, h2, h3, ul, li {
 }
 
 .footer__adress {
+  margin-bottom: 8px;
   font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 1.71;
   color: var(--color-secondary-accent);
   transition: color var(--sec) var(--cubic);
@@ -1264,14 +1275,27 @@ p, h1, h2, h3, ul, li {
 .footer__adress:hover {
   color: var(--color-accent);
 }
+@media screen and (min-width: 1200px) {
+  .footer__adress {
+    margin-bottom: 9px;
+  }
+}
 
 .footer__contact {
-  line-height: 1.75;
+  line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--sec) var(--cubic);
 }
 .footer__contact:hover {
   color: var(--color-accent);
+}
+.footer__contact:not(:last-child) {
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__contact:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer {
