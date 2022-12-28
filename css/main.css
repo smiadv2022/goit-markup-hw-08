@@ -1264,11 +1264,13 @@ p, h1, h2, h3, ul, li {
 }
 
 .footer__adress {
+  display: inline-block;
   margin-bottom: 8px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  text-align: center;
   color: var(--color-secondary-accent);
   transition: color var(--sec) var(--cubic);
 }
@@ -1278,6 +1280,8 @@ p, h1, h2, h3, ul, li {
 @media screen and (min-width: 1200px) {
   .footer__adress {
     margin-bottom: 9px;
+    text-align: left;
+    width: 231px;
   }
 }
 
