@@ -1,5 +1,8 @@
 .footerlink {
   display: block;
+  @media screen and (min-width:768px) and (max-width:1199px){
+    padding-top: 5px;
+  }
 //  outline: 1px solid green;
 //  width: calc((100% - 32px) / 2);
 
@@ -13,7 +16,7 @@
  @media screen and (mіn-width:768px) and (max-width:1199px){
 margin-left: auto;
 margin-right: 74px;
-margin-top: 5px;
+padding-top: 5px;
  }
   @media screen and (min-width:1200px){
     // margin-bottom: 99px;
@@ -35,6 +38,13 @@ margin-top: 5px;
     @media screen and (max-width:480px){
     text-align: center;
     }
+    @media screen and (mіn-width:768px) and (max-width:1199px){
+     
+      margin-top: 5px;
+       }
+  }
+  @media screen and (min-width:768px) and (max-width:1199px){
+    padding-top: 5px;
   }
 }
   .footerlink__list{

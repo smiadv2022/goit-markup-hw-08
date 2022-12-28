@@ -1156,8 +1156,12 @@ p, h1, h2, h3, ul, li {
 
 .footerlink {
   display: block;
-  /* padding-right: 100px; */
   /* outline: 2px red solid; */
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footerlink {
+    padding-top: 5px;
+  }
 }
 @media screen and (max-width: 767px) {
   .footerlink {
@@ -1171,7 +1175,7 @@ p, h1, h2, h3, ul, li {
   .footerlink {
     margin-left: auto;
     margin-right: 74px;
-    margin-top: 5px;
+    padding-top: 5px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1192,6 +1196,16 @@ p, h1, h2, h3, ul, li {
 @media screen and (max-width: 480px) {
   .footerlink p {
     text-align: center;
+  }
+}
+@media screen and (mіn-width: 768px) and (max-width: 1199px) {
+  .footerlink p {
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footerlink {
+    padding-top: 5px;
   }
 }
 
